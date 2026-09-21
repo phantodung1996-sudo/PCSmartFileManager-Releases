@@ -2,22 +2,30 @@
 
 PCSmartFileManager is a Windows file-management and file-analysis application.
 
-Official v1.0 target: **Windows 11 x64**.
+Latest release: **v1.2.0 — Global Search**.
+
+Primary supported release target: **Windows 11 x64**. Windows 10 remains best-effort and is not release-certified.
 
 Downloads are available from this repository's [GitHub Releases page](https://github.com/phantodung1996-sudo/PCSmartFileManager-Releases/releases).
 
-## Canonical v1.0.0 source provenance
+## Canonical private-source provenance
 
-- Private source repository: `phantodung1996-sudo/PCSmartFileManager`
-- Source tag: `v1.0.0`
-- Source commit: `3bd6fa09fb6baac084d344fe0105bfb3a7786ff8`
+| Release | Private source tag | Private source commit |
+| --- | --- | --- |
+| v1.2.0 | `v1.2.0` | `e8759bc0e0463395666e4a469c7d378be121e96a` |
+| v1.1.0 | `v1.1.0` | `2ffab3b5cb6331b37091e0a83fa98c83e6619c07` |
+| v1.0.0 | `v1.0.0` | `3bd6fa09fb6baac084d344fe0105bfb3a7786ff8` |
 
-The source repository is not publicly distributed by this release repository.
+Private source repository: `phantodung1996-sudo/PCSmartFileManager`.
 
-This independent repository contains public distribution metadata only. Its `v1.0.0` tag points to a distribution metadata commit, not the application source commit. GitHub-generated Source code archives contain this repository's metadata, not the private application source or the product binaries.
+The application source is not publicly distributed by this repository. Public release tags in this repository point to distribution-metadata commits, not to private application-source commits. GitHub-generated Source code archives therefore contain only public distribution metadata, not the product binaries or private source.
+
+## Distribution model
+
+Releases use manual/offline **Setup + Portable ZIP** delivery. The automatic updater is not part of the active release roadmap.
 
 ## Installer signing
 
 **UNSIGNED**
 
-The installer may therefore show an unknown/unverified publisher warning. The application is not digitally signed.
+Windows may show an unknown/unverified publisher warning. Do not disable or bypass Windows Security/SmartScreen to run the installer.
