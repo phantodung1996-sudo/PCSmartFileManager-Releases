@@ -2,11 +2,24 @@
 
 PCSmartFileManager is a Windows file-management and file-analysis application.
 
-Latest release: **v1.6.0 — Duplicate review and Document Profiles**.
+Latest release: **v1.7.0 — Explorer, Relink, Profile UX and Visual Refresh**.
 
 Primary supported release target: **Windows 11 x64**. Windows 10 remains best-effort and is not release-certified.
 
 Downloads are available from this repository's [GitHub Releases page](https://github.com/phantodung1996-sudo/PCSmartFileManager-Releases/releases).
+
+## v1.7.0 — Explorer, Relink, Profile UX and Visual Refresh
+
+[Release notes, downloads and SHA-256 checksums](https://github.com/phantodung1996-sudo/PCSmartFileManager-Releases/releases/tag/v1.7.0)
+
+- **Explorer usability:** safe Open Location actions across Explorer, Search, Favorites and Profiles; Favorite double-click uses the existing Open action once. Path/navigation improvements and consistent KB/MB/GB/TB labels preserve exact byte values and existing scaling.
+- **Reference Relink:** missing Favorite and Profile document references can be searched in completed Inventory and updated only after explicit confirmation. There is no manual picker or silent relink. Logical identity and metadata are preserved; source files are not moved, renamed, overwritten or deleted.
+- **Profile UX:** clearer primary Open/Open Location actions, compact category controls and secondary, collapsible metadata/details presentation preserve the logical profile model.
+- **Visual refresh:** updated icons and Light/Dark integration. Existing schema remains **v6**, without a new schema migration. Cross-process A→B→A (ABA) changes remain outside the guaranteed Relink stale-write semantics because schema v6 has no durable reference revision.
+
+Release build: **0 warnings / 0 errors**. Full regression: **3475/3475 PASS**. Clean Setup smoke: **8233/8233 PASS**. Clean Portable smoke: **6510/6510 PASS**. Payload verification: **428/428 PASS**. Final independent release review: **PASS**. These clean-package checks do not claim a new v1.7.0 upgrade, migration or populated-data acceptance matrix.
+
+Accepted limitations: **C01 OWNER_RISK_ACCEPTED** — 46/48 contrast measurements meet the project target of at least 3:1; two synthetic/forced combinations remain **2.371:1**, with production reachability **INDETERMINATE**. Native **100% / 125% / 200% DPI NOT_EXECUTED**, with residual risk accepted by the owner; existing 144 DPI / 150% evidence does not substitute for those scales. Native input **NOT_EXECUTED**; human visual acceptance **NOT_CLAIMED**. Setup is **UNSIGNED**. Read the release notes and packaged update guide, and take a consistent backup before updating.
 
 ## v1.6.0 — Duplicate review and Document Profiles
 
@@ -25,6 +38,7 @@ Setup is **UNSIGNED**. Native physical input and 125% DPI were not executed; no 
 
 | Release | Private source tag | Private source commit |
 | --- | --- | --- |
+| v1.7.0 | `v1.7.0` | `04e1b7b92c20e050aa03cd47f117794db676e552` |
 | v1.6.0 | `v1.6.0` | `8c75364bbbb55ab89ee9452525833c244a042d87` |
 | v1.5.0 | `v1.5.0` | `1aa4583c1ad45c9e43a476cb988e90495b897f81` |
 | v1.4.0 | `v1.4.0` | `39e0fb650393009999b5002274fb1c3fe951bf2b` |
